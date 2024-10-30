@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010D56"
+    tools:context=".Jogo">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/botaoGirarId"
+        app:layout_constraintStart_toStartOf="@+id/botaoGirarId"
+        app:layout_constraintTop_toBottomOf="@+id/botaoGirarId" />
+
+    <ImageView
+        android:id="@+id/botaoDescerId"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/baseline_brightness_1_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/botaoGirarId"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="84dp"
+        android:src="@drawable/baseline_brightness_1_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="225dp"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056">
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/botaoDescerId"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/botaoDescerId"
+        app:layout_constraintTop_toBottomOf="@+id/botaoDescerId" />
+
+    <ImageView
+        android:id="@+id/setaDireitaId"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botaoDescerId"
+        app:srcCompat="@drawable/seta_direita" />
+
+    <ImageView
+        android:id="@+id/setaEsquerdaId"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/setaDireitaId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/seta_esquerda" />
+
+    <TextView
+        android:id="@+id/textView6Id"
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="264dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/gridLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <TextView
+        android:id="@+id/txtScoreId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pontuação"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView6Id"
+        app:layout_constraintEnd_toEndOf="@+id/textView6Id"
+        app:layout_constraintStart_toStartOf="@+id/textView6Id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreJogadorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6Id"
+        app:layout_constraintEnd_toEndOf="@+id/textView6Id"
+        app:layout_constraintStart_toStartOf="@+id/textView6Id"
+        app:layout_constraintTop_toTopOf="@+id/textView6Id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
