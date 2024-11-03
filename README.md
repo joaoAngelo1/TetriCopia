@@ -29,6 +29,16 @@ This is a clone of the classic Tetris game, developed for the Android platform u
 - **Move Down**: Press the button A.
 - **Rotate Piece**: Click on the button B.
 
+## **Main Screan**
+
+
+<img src="https://github.com/user-attachments/assets/da4d56f6-9e50-4166-981b-84a1547e1b70" alt="tela inicial" width=300 heigth=300>
+
+
+## **Game Screan**
+
+<img src="https://github.com/user-attachments/assets/759e8442-8f80-4981-8f3e-cc5c2ac12920" alt="tela inicial" width=300 heigth=300>
+
 ## License
 
 This project is licensed under the MIT License. For more details, see the `LICENSE` file.
